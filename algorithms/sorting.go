@@ -27,3 +27,15 @@ func InsertionSort(array []int) {
 		}
 	}
 }
+
+func SelectionSort(array []int) {
+	for i := range array {
+		smallest := i
+		for j := i + 1; j < len(array); j++ {
+			if array[j] < array[smallest] {
+				smallest = j
+			}
+		}
+		array[i], array[smallest] = array[smallest], array[i]
+	}
+}

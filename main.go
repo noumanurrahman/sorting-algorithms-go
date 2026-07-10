@@ -13,4 +13,8 @@ func main() {
 	nums = []int{5, 2, 9, 4, 6, 3}
 	algorithms.InsertionSort(nums)
 	fmt.Println("Insertion Sort:", nums)
+
+	nums = []int{5, 2, 9, 4, 6, 3}
+	algorithms.SelectionSort(nums)
+	fmt.Println("Selection Sort:", nums)
 }
