@@ -7,6 +7,10 @@ Structure is like this:
     sorting.go
     exponential-time.go
     (and more...later)
+./structures
+    stacks.go
+    binary-tree.go
+    (and more...later)
 ./main.go
 ```
 
