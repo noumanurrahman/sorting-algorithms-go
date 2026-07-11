@@ -39,3 +39,44 @@ func SelectionSort(array []int) {
 		array[i], array[smallest] = array[smallest], array[i]
 	}
 }
+
+func MergeSort(array []int) []int {
+	if len(array) < 2 {
+		return array
+	}
+
+	mid := len(array) / 2
+
+	sortedFirst := MergeSort(array[:mid])
+	sortedSecond := MergeSort(array[mid:])
+
+	return merge(sortedFirst, sortedSecond)
+}
+
+func merge(first []int, second []int) []int {
+	i := 0
+	j := 0
+
+	var final []int
+
+	for i < len(first) && j < len(second) {
+		if first[i] < second[j] {
+			final = append(final, first[i])
+			i++
+		} else {
+			final = append(final, second[j])
+			j++
+		}
+	}
+
+	for i < len(first) {
+		final = append(final, first[i])
+		i++
+	}
+	for j < len(second) {
+		final = append(final, second[j])
+		j++
+	}
+
+	return final
+}
