@@ -7,4 +7,5 @@ func main() {
 	examples.Exponential()
 	examples.Stacks()
 	examples.Queues()
+	examples.LinkedList()
 }
