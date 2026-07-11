@@ -15,6 +15,8 @@ func main() {
 	fmt.Println("Selection Sort:", nums)
 	sortedNums := algorithms.MergeSort(nums)
 	fmt.Println("Merge Sort:", sortedNums)
+	algorithms.QuickSort(nums, 0, len(nums)-1)
+	fmt.Println("Quick Sort:", nums)
 
 	fibExponential := algorithms.FibonacciExponential(10)
 	fmt.Println("Fibonacci Exponential:", fibExponential)
