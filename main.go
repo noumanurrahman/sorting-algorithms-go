@@ -8,5 +8,6 @@ func main() {
 	//examples.Stacks()
 	//examples.Queues()
 	//examples.LinkedList()
-	examples.BinaryTree()
+	//examples.BinaryTree()
+	examples.RedBlackTree()
 }
