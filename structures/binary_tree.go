@@ -11,7 +11,7 @@ func (node *BSTNode) Insert(val int) {
 		node.val = &val
 		return
 	}
-	if node.val == &val {
+	if *node.val == val {
 		return
 	}
 	if val > *node.val {
