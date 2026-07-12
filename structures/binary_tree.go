@@ -126,3 +126,18 @@ func (node *BSTNode) Exists(target int) bool {
 	}
 	return false
 }
+
+func (node *BSTNode) Height() int {
+	if node.val == nil {
+		return 0
+	}
+	leftHeight := 0
+	rightHeight := 0
+	if node.left != nil {
+		leftHeight = node.left.Height()
+	}
+	if node.right != nil {
+		rightHeight = node.right.Height()
+	}
+	return max(leftHeight, rightHeight) + 1
+}

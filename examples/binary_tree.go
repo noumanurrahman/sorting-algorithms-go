@@ -23,4 +23,5 @@ func BinaryTree() {
 	fmt.Println(bstNode.Exists(7))
 	bstNode.Delete(7)
 	fmt.Println(bstNode.Exists(7))
+	fmt.Println(bstNode.Height())
 }
